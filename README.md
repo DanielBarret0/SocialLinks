@@ -13,7 +13,7 @@ Nesse projeto fiz algo simples mas muito útil onde pretendo deixar no rodapé d
 
 ## Deploy
 
- Visite a página no Github Pages: [Aqui](https://danielbarret0.github.io/Apeperia/)
+ Visite a página no Github Pages: [Aqui](https://danielbarret0.github.io/SocialLinks/)
 
 ## Linguagens utilizadas
   <div>
