@@ -1,3 +1,19 @@
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    80% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 * {
     margin: 0;
@@ -22,7 +38,6 @@ html {
 
     height: 100vh;
     font-family: var(--fonte);
-    font-size: 16px;
 }
 
 .titulo {
@@ -44,9 +59,19 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90vw;
-    margin: 20px auto;
+    justify-content: center;
+    text-align: center;
     gap: 15px;
+}
+
+.link-tree-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 80%;
 }
 
 .imagem-principal {
@@ -61,6 +86,7 @@ html {
 }
 
 .links {
+    animation: bounceIn 1s cubic-bezier(.2,.63,.8,.43);
     display: grid;
     grid-template-columns: 20% 50%;
     justify-content: space-evenly;
@@ -71,7 +97,7 @@ html {
     background: var(--fundo-card);
     width: 100%;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border: solid 2px var(--borda);
     border-radius: 15px;
@@ -93,13 +119,20 @@ html {
     justify-content: center;
     text-align: center;
     margin-top: 2em;
+    padding-bottom: 4em;
     font-size: 0.9em;
 }
 
 
 @media (min-width: 1024px) {
-    .link-tree {
+    .link-tree-links {
         width: 40vw;
+    }
+
+    .titulo__imagem {
+        border-radius: 100px;
+        width: 150px;
+        margin-top: 2em;
     }
 
     .imagem-principal {
