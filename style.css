@@ -141,16 +141,9 @@ html {
 }
 
 @media (min-width: 320px) {
-    .imagem-principal {
-        display:none;
-    }
-
     .link-tree .links {
-        padding: 20px;
+        padding: 10px 1px;
     }
 
-    .nome-instagram {
-        padding-bottom: 40px;
-    }
      
 } 
